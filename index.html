@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="gif-container">
+            <img src="https://www.icegif.com/wp-content/uploads/valentines-day-icegif-30.gif">
+        </div>
+        <h1>Quiere estar a mi lado toda la vida?</h1>
+        <div class="btn-container">
+            <button id="yesBtn" onclick="document.getElementById('success').style.display='flex'">Shi</button>
+            <button id="noBtn" onmouseover="move()" ontouchstart="move()">Ño</button>
+        </div>
+    </div>
+
+    <div id="success" class="success-screen">
+        <div class="letter-card">
+            <p class="letter-text">
+                La amo mucho mi princesa, desde ese 22 de noviembre hasta ahora mi amor sigue siendo fuerte!
+                Ya tenemos 7 meses juntos, ahora vamos por mas mi amor la amo con todo mi ser mi dulce reina.
+                
+                con amor: Su panquesito de nuez❤️
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function move() {
+            const btn = document.getElementById('noBtn');
+            btn.style.position = 'fixed';
+            btn.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            btn.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+        }
+    </script>
+</body>
+</html>
